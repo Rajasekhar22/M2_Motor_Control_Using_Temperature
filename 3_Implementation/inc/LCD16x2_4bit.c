@@ -1,8 +1,3 @@
-/*
- * LCD16x2_4bit.c
- *
- * http://www.electronicwings.com
- */ 
 
 #include "LCD16x2_4bit.h"
 
