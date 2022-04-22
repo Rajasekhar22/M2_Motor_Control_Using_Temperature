@@ -1,10 +1,10 @@
-PROJ_NAME = Blinky
+PROJ_NAME = Temperature_Control
 
 BUILD_DIR = Build
 
 # All Source code files
-SRC = project_main.c\
-src/user_utils.c
+SRC = M2_Monitoring_Temperature_And_Controlling_Motor/3_Implementation/src/main.c\
+inc/LCD16x2_4bit.c
 
 # All header file paths
 INC = -I inc
