@@ -10,14 +10,14 @@
   * Referred many e-sources for coding part.
        
 ##  Key feautures
-  * Intimates while change in motor with respect to temperature.
+  * Measuring the temperature, and csn control two motors.
 
 # The 4W's and a H 
 
 ## WHAT
-  * It is the controlling of two motors based on temperature.
+  * It is the controlling of two motors and monitoring of temperature.
 ## WHY
-  * The main objective of this project is to control the motor's based on their respective temperature.
+  * The main objective of this project is to control the motor's and monitor temperature.
 ## WHO
   * Industries who require continuos operation of motors/load based components to get their profits.
 ## WHERE
@@ -32,7 +32,7 @@
  ## WEAKNESS:
    * Controlling using WEB.
  ## THREATS:
-   * If sensors are failed to operate motors may get overheated.
+   * If any of the switches arevfailed to operate motors or the load connected may damage.
  
 # Detail Requirements
 
@@ -41,7 +41,7 @@
 |  ID   | Description | Status (Implemented/In Future) |
 | ----- | ----------- | ------------------------------ |
 | HLR 1 |    Intimation for motor control   |  Implemented  |
-| HLR 2 |    Sensor based control   | Implemented |
+| HLR 2 |    Temperature Monitor   | Implemented |
 | HLR 3 |    LCD Monitor   | Implemented |
 | HLR 4 |    Online monitoring/Control   | In Future |
 
