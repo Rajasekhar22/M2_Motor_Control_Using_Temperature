@@ -1,9 +1,3 @@
-/*
- * LCD16x2_4bit.h
- *
- * http://www.electronicwings.com
- */ 
-
 
 #ifndef LCD16X2_4BIT_H_
 #define LCD16X2_4BIT_H_
