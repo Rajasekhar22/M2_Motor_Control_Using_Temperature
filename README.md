@@ -4,6 +4,15 @@
 *   This project is based on Monitoring the temperature and controlling the motors.
 *   This projects mainly used by Small scale/Large scale industries.
 
+| FOLDER | CONTENTS |
+| ------ | -------- |
+| 0_Abstract | Abstract.md |
+| 1_Requirements | Requirements.md |
+| 2_Design | MOTOR_CONT.MD, TEMP_FLOW.md |
+| 3_Implementation | inc, src, Makefile, Readme.md |
+| 4_TestCases | README.md |
+| 5_Report | FinalReport.md |
+| 6_Output | Video, Readme.md, mainpro.hex, temperature and humidity control.sim1 |
 
 ## Installation Softwares
 
