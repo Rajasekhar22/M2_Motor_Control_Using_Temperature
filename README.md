@@ -57,6 +57,9 @@
 * Codiga - CODE QUALITY SCORE
 [![codiga](https://img.shields.io/badge/CODIGA_QUALITY_SCORE-100-green.svg)](https://api.codiga.io/project/33070/score/svg)
 
+* CPP CHECK
+[![CQ - c-cpp](https://github.com/Rajasekhar22/M2_Monitoring_Temperature_And_Controlling_Motor/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Rajasekhar22/M2_Monitoring_Temperature_And_Controlling_Motor/actions/workflows/c-cpp.yml)
+
 ## 🔗 Links
 [![my_portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Rajasekhar22)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/bammidi-rajasekhar-2a58651b6)
