@@ -36,9 +36,6 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/2c73efbf9ec24ad1868e452829cbfca9)](https://www.codacy.com/gh/Rajasekhar22/M2_Monitoring_Temperature_And_Controlling_Motor/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Rajasekhar22/M2_Monitoring_Temperature_And_Controlling_Motor&amp;utm_campaign=Badge_Grade)
 
 * Codiga - Static Code Analysis
-[![codiga](https://img.shields.io/badge/CODIGA_DASHBOARD-RAJASEKHAR-green.svg)](https://app.codiga.io/project/33070/dashboard)
-
-* Codiga - Static Code Analysis
 [![codiga](https://img.shields.io/badge/CODIGA_GRADE-A-green.svg)](https://api.codiga.io/project/33070/status/svg)
 
 * Codiga - CODE QUALITY SCORE
