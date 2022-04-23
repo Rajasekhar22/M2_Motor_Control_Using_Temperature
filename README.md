@@ -15,7 +15,11 @@
 
 ## FLOWCHART
 
-![App Screenshot]()
+* CONTROLLING MOTOR
+![MOTOR_CONTROL](https://github.com/Rajasekhar22/image/blob/main/2022-04-23-12-19-26.png)
+
+* TEMPERATURE MONITORING
+![MONITOR_TEMPERATURE](https://github.com/Rajasekhar22/image/blob/main/TEMP.jpeg)
 
 
 ## PROCEDURE
