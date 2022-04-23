@@ -63,6 +63,10 @@
 * Windows BUILD
 [![C windows BUILD](https://github.com/Rajasekhar22/M2_Monitoring_Temperature_And_Controlling_Motor/actions/workflows/makefile.yml/badge.svg)](https://github.com/Rajasekhar22/M2_Monitoring_Temperature_And_Controlling_Motor/actions/workflows/makefile.yml)
 
+* Valgrind
+[![Valgrind](https://github.com/Rajasekhar22/M2_Monitoring_Temperature_And_Controlling_Motor/actions/workflows/valgrind.yml/badge.svg)](https://github.com/Rajasekhar22/M2_Monitoring_Temperature_And_Controlling_Motor/actions/workflows/valgrind.yml)
+
+
 ## 🔗 Links
 [![my_portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Rajasekhar22)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/bammidi-rajasekhar-2a58651b6)
