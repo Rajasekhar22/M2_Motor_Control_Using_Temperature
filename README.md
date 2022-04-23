@@ -16,19 +16,31 @@
 ## FLOWCHART
 
 * CONTROLLING MOTOR
+
 ![MOTOR_CONTROL](https://github.com/Rajasekhar22/image/blob/main/2022-04-23-12-19-26.png)
 
 * TEMPERATURE MONITORING
+
 ![MONITOR_TEMPERATURE](https://github.com/Rajasekhar22/image/blob/main/TEMP.jpeg)
 
 
 ## PROCEDURE
 
-*   
+* Temperature Monitoring
+  * Temperature sensor(DHT22/11) is interfaced with the Atmega328 microcontroller chip.
+  * In which it measures the temperature with some delay mentioned frequently and gives signals to MCU.
+  * It is connected to PORT C for Analog to Digital conversion.
+  * Using formulae the digital values are converted into deg. Celsius.
+  * Now the temperature is displayed in LCD.
+
+* Controlling motor
+  * When Switch is in off condition Motor 2 is On and LED 2 will be glowing.
+  * when Switch is in On Condition Motor 1 is On and LED 1 will be glowing.
 
 
 ## For Testing and using code
 
+* Preferable Coding Software for Avr Coding is Microchip studio.
 * You have to use C compiler with MINGGW(latest or the previous versions).
 * Set path for MINGGW in Environment variables.
 * To go with best compiler use VISUAL STUDIO CODE.
