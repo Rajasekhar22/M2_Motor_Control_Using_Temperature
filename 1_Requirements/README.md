@@ -50,5 +50,5 @@
 
 |  ID   | Description | Status (Implemented/ In Future) |
 | ----- | ----------- | ------------------------------- |
-| LLR 1 |      |  Implemented  |
-| LLR 2 |      | In Future |
+| LLR 1 |  SWITCH  |  Implemented  |
+| LLR 2 |  POTENTIOMETER  | Implemented |
