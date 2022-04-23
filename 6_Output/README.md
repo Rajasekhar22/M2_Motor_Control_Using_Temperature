@@ -1,1 +1,7 @@
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://github.com/Rajasekhar22/M2_Monitoring_Temperature_And_Controlling_Motor/blob/main/6_Output/2022-04-23-13-59-16.mp4)
+# SWITCH OFF
+
+[![SWITCH_OFF](https://github.com/Rajasekhar22/image/blob/main/2022-04-23-14-06-56.png)
+
+# SWITCH ON
+
+[![SWITCH_OFF](https://github.com/Rajasekhar22/image/blob/main/2022-04-23-14-07-06.png)
