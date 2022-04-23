@@ -10,4 +10,4 @@
 | TC 4 |  LED 1  M2-off,M1-on |  GLOW | GLOW | PASS  |
 | TC 5 |  TEMPERATURE  |  Default  |  wrong | FAIL  |  
 
-* As it is unstable version unable to get proper output for DHT11/22 sensor.
+* As it is unstable version i'm unable to get proper output for DHT11/22 sensor.
