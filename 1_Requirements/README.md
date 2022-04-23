@@ -44,6 +44,7 @@
 | HLR 2 |    Temperature Monitor   | Implemented |
 | HLR 3 |    LCD Monitor   | Implemented |
 | HLR 4 |    Online monitoring/Control   | In Future |
+| HLR 5 |    COntrolling motor using temperature   | In Future |
 
 ## Low Level Requirements:
 
