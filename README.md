@@ -35,15 +35,9 @@
 * Codacy - Static Code Analysis
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/2c73efbf9ec24ad1868e452829cbfca9)](https://www.codacy.com/gh/Rajasekhar22/M2_Monitoring_Temperature_And_Controlling_Motor/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Rajasekhar22/M2_Monitoring_Temperature_And_Controlling_Motor&amp;utm_campaign=Badge_Grade)
 
-* Codiga - Static Analysis
-![Quality](https://api.codiga.io/project/33070/score/svg)
-
 * Codiga - Static Code Analysis
-[![codiga](https://img.shields.io/badge/CODIGA_GRADE-A-blue.svg)](https://api.codiga.io/project/33070/status/svg)
+[![codiga](https://img.shields.io/badge/CODIGA_GRADE-A-green.svg)](https://app.codiga.io/project/33070/dashboard)
 
-*   BUILD on LINUX [![Build on LINUX](https://github.com/Rajasekhar22/M1_Employee_Salary/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Rajasekhar22/M1_Employee_Salary/actions/workflows/c-cpp.yml)
-
-*   CPPCHECK [![Analysis](https://github.com/Rajasekhar22/M1_Employee_Salary/actions/workflows/analsis.yml/badge.svg)](https://github.com/Rajasekhar22/M1_Employee_Salary/actions/workflows/analsis.yml)
 
 ## 🔗 Links
 [![my_portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Rajasekhar22)
