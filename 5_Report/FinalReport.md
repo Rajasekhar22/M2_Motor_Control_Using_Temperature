@@ -48,6 +48,10 @@ This project is based on Controlling two more motors by using Temperature using 
 
 ![MOTOR_CONTROL](https://github.com/Rajasekhar22/image/blob/main/2022-04-23-12-19-26.png)
 
+* BEHAVIOURAL DIAGRAM
+
+![FJFH drawio (1)](https://user-images.githubusercontent.com/101009958/164981902-82b3eb19-46a7-4a8e-8356-28f95f017a6c.png)
+
 * TEMPERATURE MONITORING
 
 ![MONITOR_TEMPERATURE](https://github.com/Rajasekhar22/image/blob/main/TEMP.jpeg)
@@ -71,8 +75,13 @@ This project is based on Controlling two more motors by using Temperature using 
     3. Case3: while the temperature is above 50 - MOTOR 2 OPERATES.
   * It can be observed that the motor's are controlled by the temperature.
 
+
 * Two Motor's are controlled by a SPDT RELAY with some delay.
 # 
+## SIMULATION DIAGRAM
+
+<img width="756" alt="sim" src="https://user-images.githubusercontent.com/101009958/164981951-19a5a88d-1c06-46e0-9f2f-1901b96148d8.png">
+#
 ## For Testing and using code
 
 * Preferable Coding Software for Avr Coding is Microchip studio.
