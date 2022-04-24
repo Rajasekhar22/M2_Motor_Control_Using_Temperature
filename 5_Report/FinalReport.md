@@ -6,8 +6,8 @@ This project is based on Controlling two more motors by using Temperature using 
 
 *   This project is based on Monitoring the temperature and controlling the motors.
 *   This projects mainly used by Small scale/Large scale industries.
-
-COMPONENTS REQUIRED
+# 
+## COMPONENTS REQUIRED
 
 * ATMEGA328
 * TEMPERATURE SENSOR -DHT22/11(POTENTIOMETER).
@@ -15,8 +15,28 @@ COMPONENTS REQUIRED
 * LED - 2.
 * SIMULIDE(simulation).
 * CODEBLOCKS.
+# 
+## COMPONENT DESCRIPTIONS
+### ATMEGA328
 
+* The ATmega328 is a single-chip microcontroller created by Atmel in the megaAVR family It has a modified Harvard architecture 8-bit RISC processor core.
 
+### TEMPERATURE SENSOR-DHT22/11(POTENTIOMETER)
+
+* DHT11 and DHT22 are sensors that we can use to measure temperature and humidity.
+
+### DC MOTOR
+
+* A direct current (DC) motor is a type of electric machine that converts electrical energy into mechanical energy. DC motors take electrical power through direct current, and convert this energy into mechanical rotation.
+
+### LED(LIGHT EMITTING DIODE)
+
+* Compared with conventional light sources that first convert electrical energy into heat, and then into light, LEDs (Light Emitting Diodes) convert electrical energy directly into light, delivering efficient light generation with little-wasted electricity.
+
+### LCD16X2 DISPLAY
+
+* A 16x2 LCD means it can display 16 characters per line and there are 2 such lines. In this LCD each character is displayed in 5x7 pixel matrix. The 16 x 2 intelligent alphanumeric dot matrix display is capable of displaying 224 different characters and symbols.
+# 
 ## FLOWCHART
 
 * CONTROLLING MOTOR
@@ -29,7 +49,7 @@ COMPONENTS REQUIRED
 
 * As i have used unstable version of Simulide i haven't got proper results even my code is correct.
 * I have used potentiometer instead of that.
-
+# 
 ## PROCEDURE
 
 * Temperature Monitoring
@@ -45,7 +65,7 @@ COMPONENTS REQUIRED
     2. Case2: while the temperature is above 20 and below 50 - MOTOR 2 OPERATES.
     3. Case3: while the temperature is above 50 - MOTOR 2 OPERATES.
   * It can be observed that the motor's are controlled by the temperature.
-
+# 
 ## For Testing and using code
 
 * Preferable Coding Software for Avr Coding is Microchip studio.
@@ -54,12 +74,13 @@ COMPONENTS REQUIRED
 * To go with best compiler use VISUAL STUDIO CODE.
 * In Visual Studio code you can also RUN the program in both LINUX and WINDOWS.
 * Unit testing is done for Linux.
-
-Conclusion
+# 
+## Conclusion
   
   Motor's connected are controlled using switch and temperature is sensed properly.
-  
-REFERENCES
+# 
+## REFERENCES
 
 * Referred temeperature sensor integration with Atmega328 MCU.
 * Surefed in internet regarding AVR CODING.
+# 
