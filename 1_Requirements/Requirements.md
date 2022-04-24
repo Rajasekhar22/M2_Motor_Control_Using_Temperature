@@ -3,21 +3,21 @@
 ##  Feautures
   * Easy in controlling two motors in an industry.
   * Monitoring of temperature made easy.
-  * Automatic controlling using teperature.
+  * Automatic controlling using teMperature.
 
 ## Research
   * Referred many Arduino temperature measurement based projects.
   * Referred many e-sources for coding part.
        
 ##  Key feautures
-  * Measuring the temperature, and csn control two motors.
+  * Measuring the temperature, and can control two motors using Temperature sensor.
 
 # The 4W's and a H 
 
 ## WHAT
-  * It is the controlling of two motors and monitoring of temperature.
+  * It is the controlling of two motors using temperature sensor and monitoring Temperature.
 ## WHY
-  * The main objective of this project is to control the motor's and monitor temperature.
+  * The main objective of this project is to control the motor's using Temperature sensor and monitor temperature.
 ## WHO
   * Industries who require continuos operation of motors/load based components to get their profits.
 ## WHERE
@@ -42,13 +42,14 @@
 | ----- | ----------- | ------------------------------ |
 | HLR 1 |    Intimation for motor control   |  Implemented  |
 | HLR 2 |    Temperature Monitor   | Implemented |
-| HLR 3 |    LCD Monitor   | Implemented |
-| HLR 4 |    Online monitoring/Control   | In Future |
-| HLR 5 |    COntrolling motor using temperature   | In Future |
+| HLR 3 |    LCD Monitor  | Implemented |
+| HLR 4 |    Motor control using Temperature  | Implemented |
+| HLR 5 |    Online monitoring/Control   | In Future |
+| HLR 6 |    COntrolling motor using temperature   | In Future |
 
 ## Low Level Requirements:
 
 |  ID   | Description | Status (Implemented/ In Future) |
 | ----- | ----------- | ------------------------------- |
-| LLR 1 |  SWITCH  |  Implemented  |
+| LLR 1 |  LED  |  Implemented  |
 | LLR 2 |  POTENTIOMETER  | Implemented |
