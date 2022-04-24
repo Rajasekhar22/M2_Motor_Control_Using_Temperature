@@ -1,3 +1,4 @@
 # FLOWCHART FOR MOTOR CONTROL
 
-![Photo](https://github.com/Rajasekhar22/image/blob/main/2022-04-23-12-19-26.png)
+![FJFH drawio](https://user-images.githubusercontent.com/101009958/164981212-8e8af239-e470-412b-b69f-8b8bfab7d8b1.png)
+
