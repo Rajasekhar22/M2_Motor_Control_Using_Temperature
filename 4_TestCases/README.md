@@ -1,13 +1,12 @@
 # TEST CASES
 
-
-
 |  ID  | TEST | EXPECTED RESULT | RESULT  | PASS/FAIL |
 | ---- | ----------- | --------------- | ------  | --------- |
-| TC 1 |  SWITCH OFF  |  MOTOR 2 ON, MOTOR 1 OFF  |  MOTOR 2 ON, MOTOR 1 OFF | PASS  |
-| TC 2 |  SWITCH ON   |  MOTOR 2 OFF, MOTOR 1 ON  |  MOTOR 2 OFF, MOTOR 1 ON | PASS  |
-| TC 3 |  LED 2  M2-on,M1-off |  GLOW | GLOW | PASS  |
-| TC 4 |  LED 1  M2-off,M1-on |  GLOW | GLOW | PASS  |
-| TC 5 |  TEMPERATURE  |  Default  |  wrong | FAIL  |  
-
-* As it is unstable version i'm unable to get proper output for DHT11/22 sensor.
+| TC 1 |  TEMPERATURE-BELOW 20  |  MOTOR 1 ON, MOTOR 2 OFF  |  MOTOR 1 ON, MOTOR 2 OFF | PASS  |
+| TC 2 |  TEMPERATURE-ABOVE 20, BELOW 50   |  MOTOR 1 ON, MOTOR 2 ON  |  MOTOR 1 ON, MOTOR 2 ON | PASS  |
+| TC 3 |  TEMPERATURE-ABOVE 50  | MOTOR 2 ON, MOTOR 1 OFF | MOTOR 2 ON, MOTOR 1 OFF | PASS  |
+| TC 4 |  MOTOR 1 ON-LED1 |  GLOW | GLOW | PASS  |
+| TC 5 |  MOTOR 2 ON-LED2 |  GLOW | GLOW | PASS  |  
+| TC 6 |  MOTOR 1 ON-LED 1, MOTOR 2 ON-LED 2 |  LED1 GLOW,LED2 GLOW | LED1 GLOW,LED2 GLOW | PASS  |  
+| TC 7 |  SWITCH 1 ON-MOTOR 3 |  MOTOR 3, LED 3 ON | MOTOR 3, LED 3 ON | PASS |  
+| TC 8 |  SWITCH 1 OFF-MOTOR 4 |  MOTOR 4, LED 4 ON | MOTOR 4, LED 4 ON | PASS |  
