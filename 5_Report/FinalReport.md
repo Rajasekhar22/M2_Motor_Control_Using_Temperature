@@ -46,7 +46,8 @@ This project is based on Controlling two more motors by using Temperature using 
 
 * CONTROLLING MOTOR
 
-![MOTOR_CONTROL](https://github.com/Rajasekhar22/image/blob/main/2022-04-23-12-19-26.png)
+![FJFH drawio](https://user-images.githubusercontent.com/101009958/164982001-6e8979ec-fcba-4bb0-a33a-4de7dc813a78.png)
+
 
 * BEHAVIOURAL DIAGRAM
 
