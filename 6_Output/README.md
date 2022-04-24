@@ -1,22 +1,27 @@
 # SIMULATION CIRCUIT
 
-<img width="500" alt="Motor_control_using_tem" src="https://user-images.githubusercontent.com/101009958/164971912-4fa07cd1-2cb1-4ebd-968d-fcf3310b4c01.png">
+<img width="756" alt="sim" src="https://user-images.githubusercontent.com/101009958/164979958-f596955d-f26c-4f90-9378-8b66e03d69a7.png">
+
 
 # TEMPERATURE BELOW 20
 
-<img width="500" alt="Motor_control_using_tem1" src="https://user-images.githubusercontent.com/101009958/164971973-72ef9745-eed1-4d4b-9d1d-6329b741d532.png">
+<img width="756" alt="LCD1_BELOW_20" src="https://user-images.githubusercontent.com/101009958/164979978-4dd5f07c-6815-4049-b839-e0dd2bddfaa4.png">
 
 # TEMPERATURE ABOVE 20 BELOW 50
 
-<img width="500" alt="Motor_control_using_tem2" src="https://user-images.githubusercontent.com/101009958/164972026-fae10653-bff8-4a7b-842a-0a129bae4819.png">
+<img width="756" alt="LCD_ABOVE_20" src="https://user-images.githubusercontent.com/101009958/164979989-e2869bb2-10a1-4de7-b895-1082a2dfc234.png">
+
 
 #TEMPERATURE ABOVE 50
 
-<img width="500" alt="Motor_control_using_tem3" src="https://user-images.githubusercontent.com/101009958/164972044-27892a22-158e-4dce-aee8-4e52c756d8f8.png">
+<img width="756" alt="LCD_ABOVE_50" src="https://user-images.githubusercontent.com/101009958/164980000-b36b4e5d-bb1c-483b-90b3-96f094979024.png">
+
 
 # Video
 
-https://user-images.githubusercontent.com/101009958/164972208-b9dc5a6c-1359-4032-906e-a3409d3d7068.mp4
+https://user-images.githubusercontent.com/101009958/164980014-01b9e204-458e-41fe-9c9f-229eae58b9e3.mp4
+
+
 
 
 
