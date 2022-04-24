@@ -1,4 +1,6 @@
 #include "header.h"
+#include "LCD.c"
+#include "display_control.c"
 
 void convertndisplay(unsigned char value);
 unsigned char data;
