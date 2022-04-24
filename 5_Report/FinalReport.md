@@ -1,7 +1,7 @@
 # Monitoring_Temperature_And_Controlling_Motor
 
 ##  ABSTRACT
-This project is based on Controlling two more motors by using a switch and Monitoring the Temperature using DHT22/11 sensor. For Ac motors, we can use Relays to run another motor by energising the coil. For monitoring the sensor LCD 16x2 panel is used. This control of the motor using temperature is very much useful to control the motor in the industry. Industries, where there is a requirement for continuous operation of motors, can use this project. To prevent the motor from producing high heat and harmonics we go for controlling the motor using temperature. We can also be able to monitor the status of the motor using the LED provided to it. To improve the performance of the operation we can also use the timers to operate the motor by taking statistics of some reading provided by a sensor concerning the motor.
+This project is based on Controlling two more motors by using Temperature using DHT22/11 sensor/Temperature sensor(Thermister). For Ac motors, we can use Relays to run another motor by energising the coil. For monitoring the Temperature, LCD 16x2 panel is used. This control of the motor using temperature is very much useful to control the motor in the industry. Industries, where there is a requirement for continuous operation of motors, can use this project. To prevent the motor from producing high heat and harmonics we go for controlling the motor using temperature. We can also be able to monitor the status of the motor using the LED provided to it. To improve the performance of the operation we can also use the timers to operate the motor by taking statistics of some reading provided by a sensor concerning the motor. This is project mainly gives safety to motors to prevent from damage and explode.
 
 
 *   This project is based on Monitoring the temperature and controlling the motors.
@@ -33,16 +33,18 @@ COMPONENTS REQUIRED
 ## PROCEDURE
 
 * Temperature Monitoring
-  * Temperature sensor(DHT22/11) is interfaced with the Atmega328 microcontroller chip.
+  * Temperature sensor(DHT22/11) or Potentiometer is interfaced with the Atmega328 microcontroller chip.
   * In which it measures the temperature with some delay mentioned frequently and gives signals to MCU.
   * It is connected to PORT C for Analog to Digital conversion.
   * Using formulae the digital values are converted into deg. Celsius.
   * Now the temperature is displayed in LCD.
 
-* Controlling motor
-  * When Switch is in off condition Motor 2 is On and LED 2 will be glowing.
-  * when Switch is in On Condition Motor 1 is On and LED 1 will be glowing.
-
+* Controlling motor using Temperature sensor
+  * There are three cases where the two motor's operate:
+    1. Case1: while the temperature is below 20 - MOTOR 1 OPERATES.
+    2. Case2: while the temperature is above 20 and below 50 - MOTOR 2 OPERATES.
+    3. Case3: while the temperature is above 50 - MOTOR 2 OPERATES.
+  * It can be observed that the motor's are controlled by the temperature.
 
 ## For Testing and using code
 
