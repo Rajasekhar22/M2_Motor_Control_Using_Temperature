@@ -24,9 +24,9 @@
 
 ## FLOWCHART
 
-* CONTROLLING MOTOR
+* CONTROLLING MOTOR USING TEMPERATURE
 
-![MOTOR_CONTROL](https://github.com/Rajasekhar22/image/blob/main/2022-04-23-12-19-26.png)
+![FJFH drawio](https://user-images.githubusercontent.com/101009958/164981391-8b0567c9-f8f7-42b5-b7fb-d3ce200a345b.png)
 
 * TEMPERATURE MONITORING
 
