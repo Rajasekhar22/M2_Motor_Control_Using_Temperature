@@ -15,6 +15,7 @@ This project is based on Controlling two more motors by using Temperature using 
 * LED - 2.
 * SIMULIDE(simulation).
 * CODEBLOCKS.
+* SPDT RELAY
 # 
 ## COMPONENT DESCRIPTIONS
 ### ATMEGA328
@@ -36,7 +37,11 @@ This project is based on Controlling two more motors by using Temperature using 
 ### LCD16X2 DISPLAY
 
 * A 16x2 LCD means it can display 16 characters per line and there are 2 such lines. In this LCD each character is displayed in 5x7 pixel matrix. The 16 x 2 intelligent alphanumeric dot matrix display is capable of displaying 224 different characters and symbols.
+
+### SPDT RELAY
+* An SPDT Relay or Single Pole Double Throw Relay is a type of relay that has one input and two outputs. Including the coil terminals, it has a total of five terminals. It not only provides the switching function even it can route the signal. An SPDT relay can control two electrical or electronic circuits.
 # 
+
 ## FLOWCHART
 
 * CONTROLLING MOTOR
@@ -65,6 +70,8 @@ This project is based on Controlling two more motors by using Temperature using 
     2. Case2: while the temperature is above 20 and below 50 - MOTOR 2 OPERATES.
     3. Case3: while the temperature is above 50 - MOTOR 2 OPERATES.
   * It can be observed that the motor's are controlled by the temperature.
+
+* Two Motor's are controlled by a SPDT RELAY with some delay.
 # 
 ## For Testing and using code
 
