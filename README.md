@@ -12,7 +12,7 @@
 | 3_Implementation | inc (LCD.c, header.h, display_control.c), src (main.c), Makefile, Readme.md |
 | 4_TestCases | TestCase.md |
 | 5_Report | FinalReport.md |
-| 6_Output | ImageVideo.md, motor_control_temp.hex, Motor_control_using_tem.sim1 |
+| 6_Output | Video, ImageVideo.md, motor_control_temp.hex, Motor_control_using_tem.sim1 |
 
 ## Installation Softwares
 
