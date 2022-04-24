@@ -91,7 +91,11 @@ This project is based on Controlling two more motors by using Temperature using 
 * To go with best compiler use VISUAL STUDIO CODE.
 * In Visual Studio code you can also RUN the program in both LINUX and WINDOWS.
 * Unit testing is done for Linux.
-# 
+#
+## RESULTS
+<img width="756" alt="LCD_ABOVE_50" src="https://user-images.githubusercontent.com/101009958/164982038-e1047b58-6cad-4c3a-a964-50fd24d64ba1.png">
+
+#
 ## Conclusion
   
   Motor's connected are controlled using switch and temperature is sensed properly.
