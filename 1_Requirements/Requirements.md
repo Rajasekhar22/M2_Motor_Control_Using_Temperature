@@ -53,3 +53,4 @@
 | ----- | ----------- | ------------------------------- |
 | LLR 1 |  LED  |  Implemented  |
 | LLR 2 |  POTENTIOMETER  | Implemented |
+| LLR 3 |  RELAY  | Implemented |
