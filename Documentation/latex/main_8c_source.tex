@@ -1,0 +1,45 @@
+\doxysection{main.\+c}
+\label{main_8c_source}\index{src/main.c@{src/main.c}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{preprocessor}{\#include "{}header.h"{}}}
+\DoxyCodeLine{00002 \textcolor{preprocessor}{\#include "{}LCD.c"{}}}
+\DoxyCodeLine{00003 \textcolor{preprocessor}{\#include "{}display\_control.c"{}}}
+\DoxyCodeLine{00004 }
+\DoxyCodeLine{00005 \textcolor{keywordtype}{void} convertndisplay(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} value);}
+\DoxyCodeLine{00006 \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} data;}
+\DoxyCodeLine{00007 \textcolor{keywordtype}{int} main(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00008 \{}
+\DoxyCodeLine{00009 DDRB |=(1<<PB1);\textcolor{comment}{//Set Direction for LED 2}}
+\DoxyCodeLine{00010 DDRB |=(1<<PB2);\textcolor{comment}{//Set Direction for LED 1}}
+\DoxyCodeLine{00011 DDRC |=(1<<PC1);\textcolor{comment}{//Set Direction for MOTOR 2}}
+\DoxyCodeLine{00012 DDRC |=(1<<PC2);\textcolor{comment}{//Set Direction for MOTOR 1}}
+\DoxyCodeLine{00013 DDRD |=(1<<PD3);\textcolor{comment}{//Set Direction for MOTOR 4}}
+\DoxyCodeLine{00014 DDRD |=(1<<PD1);\textcolor{comment}{//Set Direction for MOTOR 3}}
+\DoxyCodeLine{00015 DDRD |=(1<<PD4);}
+\DoxyCodeLine{00016 \textcolor{comment}{//PORTD |=(1<<PD4);//Set Direction for SWITCH-\/LOW PIN}}
+\DoxyCodeLine{00017 lcd\_init();\textcolor{comment}{//calling init LED}}
+\DoxyCodeLine{00018 lcd\_print(\textcolor{stringliteral}{"{}Temperature:"{}});}
+\DoxyCodeLine{00019 DDRC |= (1<<0);\textcolor{comment}{//Set Direction for TEMPERATURE SENSOR}}
+\DoxyCodeLine{00020 ADCSRA = 0x87;\textcolor{comment}{//Set Control Status Register}}
+\DoxyCodeLine{00021 ADMUX = 0xE0;\textcolor{comment}{//Initialize Mux}}
+\DoxyCodeLine{00022 \textcolor{keywordflow}{while}(1)\{}
+\DoxyCodeLine{00023     ADCSRA |= (1<<ADSC);}
+\DoxyCodeLine{00024     \textcolor{keywordflow}{while}((ADCSRA \& (1<<ADIF))==0);}
+\DoxyCodeLine{00025     data=ADCH;}
+\DoxyCodeLine{00026     convertndisplay(data);}
+\DoxyCodeLine{00027     \_delay\_ms(500);}
+\DoxyCodeLine{00028 }
+\DoxyCodeLine{00029         PORTD |=(1<<PD1);}
+\DoxyCodeLine{00030         \_delay\_ms(1000);}
+\DoxyCodeLine{00031 }
+\DoxyCodeLine{00032         PORTD |=(1<<PD3);}
+\DoxyCodeLine{00033         \_delay\_ms(1000);}
+\DoxyCodeLine{00034         PORTD \&=\string~(1<<PD3);}
+\DoxyCodeLine{00035 }
+\DoxyCodeLine{00036 }
+\DoxyCodeLine{00037 \}}
+\DoxyCodeLine{00038 \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{00039 \}}
+
+\end{DoxyCode}

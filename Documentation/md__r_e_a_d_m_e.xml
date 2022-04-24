@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__r_e_a_d_m_e" xml:lang="en-US">
+
+<para><itemizedlist>
+<listitem>
+<para><link linkend="_main_8c_source">main.c</link> code is attached in SRC folder.</para>
+</listitem><listitem>
+<para>Header files are atteched in inc folder. </para>
+</listitem></itemizedlist>
+</para>
+</section>

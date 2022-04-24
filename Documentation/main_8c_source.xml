@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_main_8c_source" xml:lang="en-US">
+<title>main.c</title>
+<indexterm><primary>src/main.c</primary></indexterm>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_main_8c_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;header.h&quot;</emphasis>
+<anchor xml:id="_main_8c_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&quot;LCD.c&quot;</emphasis>
+<anchor xml:id="_main_8c_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&quot;display_control.c&quot;</emphasis>
+<anchor xml:id="_main_8c_source_1l00004"/>00004 
+<anchor xml:id="_main_8c_source_1l00005"/>00005 <emphasis role="keywordtype">void</emphasis>&#32;convertndisplay(<emphasis role="keywordtype">unsigned</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;value);
+<anchor xml:id="_main_8c_source_1l00006"/>00006 <emphasis role="keywordtype">unsigned</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;data;
+<anchor xml:id="_main_8c_source_1l00007"/>00007 <emphasis role="keywordtype">int</emphasis>&#32;main(<emphasis role="keywordtype">void</emphasis>)
+<anchor xml:id="_main_8c_source_1l00008"/>00008 {
+<anchor xml:id="_main_8c_source_1l00009"/>00009 DDRB&#32;|=(1&lt;&lt;PB1);<emphasis role="comment">//Set&#32;Direction&#32;for&#32;LED&#32;2</emphasis>
+<anchor xml:id="_main_8c_source_1l00010"/>00010 DDRB&#32;|=(1&lt;&lt;PB2);<emphasis role="comment">//Set&#32;Direction&#32;for&#32;LED&#32;1</emphasis>
+<anchor xml:id="_main_8c_source_1l00011"/>00011 DDRC&#32;|=(1&lt;&lt;PC1);<emphasis role="comment">//Set&#32;Direction&#32;for&#32;MOTOR&#32;2</emphasis>
+<anchor xml:id="_main_8c_source_1l00012"/>00012 DDRC&#32;|=(1&lt;&lt;PC2);<emphasis role="comment">//Set&#32;Direction&#32;for&#32;MOTOR&#32;1</emphasis>
+<anchor xml:id="_main_8c_source_1l00013"/>00013 DDRD&#32;|=(1&lt;&lt;PD3);<emphasis role="comment">//Set&#32;Direction&#32;for&#32;MOTOR&#32;4</emphasis>
+<anchor xml:id="_main_8c_source_1l00014"/>00014 DDRD&#32;|=(1&lt;&lt;PD1);<emphasis role="comment">//Set&#32;Direction&#32;for&#32;MOTOR&#32;3</emphasis>
+<anchor xml:id="_main_8c_source_1l00015"/>00015 DDRD&#32;|=(1&lt;&lt;PD4);
+<anchor xml:id="_main_8c_source_1l00016"/>00016 <emphasis role="comment">//PORTD&#32;|=(1&lt;&lt;PD4);//Set&#32;Direction&#32;for&#32;SWITCH-LOW&#32;PIN</emphasis>
+<anchor xml:id="_main_8c_source_1l00017"/>00017 lcd_init();<emphasis role="comment">//calling&#32;init&#32;LED</emphasis>
+<anchor xml:id="_main_8c_source_1l00018"/>00018 lcd_print(<emphasis role="stringliteral">&quot;Temperature:&quot;</emphasis>);
+<anchor xml:id="_main_8c_source_1l00019"/>00019 DDRC&#32;|=&#32;(1&lt;&lt;0);<emphasis role="comment">//Set&#32;Direction&#32;for&#32;TEMPERATURE&#32;SENSOR</emphasis>
+<anchor xml:id="_main_8c_source_1l00020"/>00020 ADCSRA&#32;=&#32;0x87;<emphasis role="comment">//Set&#32;Control&#32;Status&#32;Register</emphasis>
+<anchor xml:id="_main_8c_source_1l00021"/>00021 ADMUX&#32;=&#32;0xE0;<emphasis role="comment">//Initialize&#32;Mux</emphasis>
+<anchor xml:id="_main_8c_source_1l00022"/>00022 <emphasis role="keywordflow">while</emphasis>(1){
+<anchor xml:id="_main_8c_source_1l00023"/>00023 &#32;&#32;&#32;&#32;ADCSRA&#32;|=&#32;(1&lt;&lt;ADSC);
+<anchor xml:id="_main_8c_source_1l00024"/>00024 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>((ADCSRA&#32;&amp;&#32;(1&lt;&lt;ADIF))==0);
+<anchor xml:id="_main_8c_source_1l00025"/>00025 &#32;&#32;&#32;&#32;data=ADCH;
+<anchor xml:id="_main_8c_source_1l00026"/>00026 &#32;&#32;&#32;&#32;convertndisplay(data);
+<anchor xml:id="_main_8c_source_1l00027"/>00027 &#32;&#32;&#32;&#32;_delay_ms(500);
+<anchor xml:id="_main_8c_source_1l00028"/>00028 
+<anchor xml:id="_main_8c_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;PORTD&#32;|=(1&lt;&lt;PD1);
+<anchor xml:id="_main_8c_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_delay_ms(1000);
+<anchor xml:id="_main_8c_source_1l00031"/>00031 
+<anchor xml:id="_main_8c_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;PORTD&#32;|=(1&lt;&lt;PD3);
+<anchor xml:id="_main_8c_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_delay_ms(1000);
+<anchor xml:id="_main_8c_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;PORTD&#32;&amp;=~(1&lt;&lt;PD3);
+<anchor xml:id="_main_8c_source_1l00035"/>00035 
+<anchor xml:id="_main_8c_source_1l00036"/>00036 
+<anchor xml:id="_main_8c_source_1l00037"/>00037 }
+<anchor xml:id="_main_8c_source_1l00038"/>00038 <emphasis role="keywordflow">return</emphasis>&#32;0;
+<anchor xml:id="_main_8c_source_1l00039"/>00039 }
+</programlisting></section>

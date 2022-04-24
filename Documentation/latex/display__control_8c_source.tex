@@ -1,0 +1,41 @@
+\doxysection{display\+\_\+control.\+c}
+\label{display__control_8c_source}\index{inc/display\_control.c@{inc/display\_control.c}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{preprocessor}{\#include "{}header.h"{}}}
+\DoxyCodeLine{00002 }
+\DoxyCodeLine{00003 \textcolor{keywordtype}{void} convertndisplay(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} value)}
+\DoxyCodeLine{00004 \{}
+\DoxyCodeLine{00005     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} x,d1,d2;}
+\DoxyCodeLine{00006     x=value/10;}
+\DoxyCodeLine{00007     d1=x;}
+\DoxyCodeLine{00008     d2=value\%10;}
+\DoxyCodeLine{00009     lcdcmd(0x8D);}
+\DoxyCodeLine{00010     lcddata(d1+0x30);}
+\DoxyCodeLine{00011     lcddata(d2+0x30);}
+\DoxyCodeLine{00012     \textcolor{comment}{/*THIS IF ELSE IS TO CONTROL THE MOTOR BY MEASUREING TEMPERATURE*/}}
+\DoxyCodeLine{00013     \textcolor{keywordflow}{if}(((d1*10)+d2)>50)}
+\DoxyCodeLine{00014     \{}
+\DoxyCodeLine{00015         PORTC \&=\string~ (1<<PC2);}
+\DoxyCodeLine{00016         PORTC|= (1<<PC1);}
+\DoxyCodeLine{00017         PORTB|=(1<<PB1);}
+\DoxyCodeLine{00018         \_delay\_ms(1000);}
+\DoxyCodeLine{00019     \}}
+\DoxyCodeLine{00020     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(((d1*10)+d2)<20)\{}
+\DoxyCodeLine{00021         PORTC\&=\string~ (1<<PC1);}
+\DoxyCodeLine{00022         PORTC |= (1<<PC2);}
+\DoxyCodeLine{00023         PORTB |= (1<<PB2);}
+\DoxyCodeLine{00024         \_delay\_ms(1000);}
+\DoxyCodeLine{00025     \}}
+\DoxyCodeLine{00026     \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00027         PORTC|= (1<<PC1);}
+\DoxyCodeLine{00028         PORTB|=(1<<PB1);}
+\DoxyCodeLine{00029         PORTC |= (1<<PC2);}
+\DoxyCodeLine{00030         PORTB |= (1<<PB2);}
+\DoxyCodeLine{00031 }
+\DoxyCodeLine{00032     \}}
+\DoxyCodeLine{00033 \}}
+\DoxyCodeLine{00034 }
+\DoxyCodeLine{00035 }
+
+\end{DoxyCode}

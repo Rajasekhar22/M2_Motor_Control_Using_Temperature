@@ -1,0 +1,58 @@
+\doxysection{LCD.\+c}
+\label{_l_c_d_8c_source}\index{inc/LCD.c@{inc/LCD.c}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{preprocessor}{\#include "{}header.h"{}}}
+\DoxyCodeLine{00002 }
+\DoxyCodeLine{00003 \textcolor{keywordtype}{void} lcdcmd(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} cmd)}
+\DoxyCodeLine{00004 \{}
+\DoxyCodeLine{00005     PORTD \&=\string~ (1<<RS);\textcolor{comment}{//SET RS PIN TO LOW IN LCD}}
+\DoxyCodeLine{00006     PORTD \&=\string~ (1<<RW);\textcolor{comment}{//SET RW PIN TO LOW IN LCD}}
+\DoxyCodeLine{00007     LCD=cmd \& 0xF0;}
+\DoxyCodeLine{00008     PORTD |= (1<<EN);\textcolor{comment}{//SET EN PIN TO HIGH IN LCD}}
+\DoxyCodeLine{00009     \_delay\_ms(1);}
+\DoxyCodeLine{00010     PORTD \&=\string~(1<<EN);\textcolor{comment}{//SET EN PIN TO LOW IN LCD}}
+\DoxyCodeLine{00011 }
+\DoxyCodeLine{00012     LCD = cmd<<4;}
+\DoxyCodeLine{00013     PORTD |= (1<<EN);\textcolor{comment}{//SET EN PIN TO HIGH IN LCD}}
+\DoxyCodeLine{00014     \_delay\_ms(1);}
+\DoxyCodeLine{00015     PORTD \&=\string~(1<<EN);\textcolor{comment}{//SET EN PIN TO LOW IN LCD}}
+\DoxyCodeLine{00016 \}}
+\DoxyCodeLine{00017 \textcolor{keywordtype}{void} lcddata(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} data)}
+\DoxyCodeLine{00018 \{}
+\DoxyCodeLine{00019     PORTD |= (1<<RS);\textcolor{comment}{//SET RS PIN TO HIGH IN LCD}}
+\DoxyCodeLine{00020     PORTD \&=\string~(1<<RW);\textcolor{comment}{//SET RW PIN TO LOW IN LCD}}
+\DoxyCodeLine{00021     LCD = data \& 0xF0;}
+\DoxyCodeLine{00022     PORTD |=(1<<EN);\textcolor{comment}{//SET EN PIN TO HIGH IN LCD}}
+\DoxyCodeLine{00023     \_delay\_ms(1);}
+\DoxyCodeLine{00024     PORTD \&=\string~(1<<EN);\textcolor{comment}{//SET EN PIN TO LOW IN LCD}}
+\DoxyCodeLine{00025 }
+\DoxyCodeLine{00026     LCD=data<<4;}
+\DoxyCodeLine{00027     PORTD |= (1<<EN);\textcolor{comment}{//SET EN PIN TO HIGH IN LCD}}
+\DoxyCodeLine{00028     \_delay\_ms(1);}
+\DoxyCodeLine{00029     PORTD \&=\string~(1<<EN);\textcolor{comment}{//SET EN PIN TO LOW IN LCD}}
+\DoxyCodeLine{00030 \}}
+\DoxyCodeLine{00031 \textcolor{keywordtype}{void} lcd\_init(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00032 \{}
+\DoxyCodeLine{00033     DDRB = 0xFF;\textcolor{comment}{//SET DATA DIRECTION}}
+\DoxyCodeLine{00034     DDRD = 0xFF;\textcolor{comment}{//SET DATA DIRECTION}}
+\DoxyCodeLine{00035     PORTD \&=\string~ (1<<EN);\textcolor{comment}{//SET EN PIN TO LOW IN LCD}}
+\DoxyCodeLine{00036     \textcolor{comment}{/*SETTING LCD*/}}
+\DoxyCodeLine{00037     lcdcmd(0x33);}
+\DoxyCodeLine{00038     lcdcmd(0x32);}
+\DoxyCodeLine{00039     lcdcmd(0x28);}
+\DoxyCodeLine{00040     lcdcmd(0x0E);}
+\DoxyCodeLine{00041     lcdcmd(0x01);}
+\DoxyCodeLine{00042     \_delay\_ms(2);\textcolor{comment}{//SET DELAY OF 2}}
+\DoxyCodeLine{00043 \}}
+\DoxyCodeLine{00044 \textcolor{comment}{/*PRINT TEMPERATURE TO LCD*/}}
+\DoxyCodeLine{00045 \textcolor{keywordtype}{void} lcd\_print(\textcolor{keywordtype}{char} *str)}
+\DoxyCodeLine{00046 \{}
+\DoxyCodeLine{00047     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} i=0;}
+\DoxyCodeLine{00048     \textcolor{keywordflow}{while}(str[i]!=0)\{}
+\DoxyCodeLine{00049         lcddata(str[i]);}
+\DoxyCodeLine{00050         i++;}
+\DoxyCodeLine{00051     \}}
+\DoxyCodeLine{00052 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_header_8h_source" xml:lang="en-US">
+<title>header.h</title>
+<indexterm><primary>inc/header.h</primary></indexterm>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_header_8h_source_1l00001"/>00001 <emphasis role="comment">/*HEADER&#32;FILES&#32;ARE&#32;PROVIDED&#32;HERE*/</emphasis>
+<anchor xml:id="_header_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&lt;avr/io.h&gt;</emphasis>
+<anchor xml:id="_header_8h_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&lt;util/delay.h&gt;</emphasis>
+<anchor xml:id="_header_8h_source_1l00004"/>00004 <emphasis role="preprocessor">#define&#32;F_CPU&#32;16000000UL</emphasis>
+<anchor xml:id="_header_8h_source_1l00005"/>00005 <emphasis role="preprocessor">#define&#32;LCD&#32;PORTB</emphasis>
+<anchor xml:id="_header_8h_source_1l00006"/>00006 <emphasis role="preprocessor">#define&#32;EN&#32;7</emphasis>
+<anchor xml:id="_header_8h_source_1l00007"/>00007 <emphasis role="preprocessor">#define&#32;RS&#32;5</emphasis>
+<anchor xml:id="_header_8h_source_1l00008"/>00008 <emphasis role="preprocessor">#define&#32;RW&#32;6</emphasis>
+</programlisting></section>
