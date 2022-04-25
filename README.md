@@ -1,5 +1,4 @@
-# Monitoring_Temperature_And_Controlling_Motor
-
+# Motor_Control_Using_Temperature
 
 *   This project is based on Monitoring the temperature and controlling the motors.
 *   This projects mainly used by Small scale/Large scale industries.
